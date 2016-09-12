@@ -30,8 +30,8 @@
     <link href="http://www.areeattrezzate.eu/libro/differenza-tra-camper-service-parcheggio-punto-sosta-e-area-attrezzata"/>
     <key key="tourism" value="caravan_site"/>
 	<check key="drinking_water" text="acqua potabile" default="yes" delete_if_empty="true" />
+	<combo key="drinking_water:description" text="presa acqua da" values="3/4 inch,1/2 inch,unknown"/>    <combo key="sanitary_dump_station" text="dump station" values="yes,no,customers"/>
 	<combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
-    <combo key="drinking_water:description" text="presa acqua da" values="3/4 inch,1/2 inch,unknown"/>    <combo key="sanitary_dump_station" text="dump station" values="yes,no,customers"/>
 	<check key="amenity" text="charging_station" default="off" delete_if_empty="true" />
 	<check key="lit" text="illuminato" values="yes,no" delete_if_empty="true" />
 	<check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
