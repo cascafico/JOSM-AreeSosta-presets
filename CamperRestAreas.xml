@@ -49,7 +49,8 @@
 	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
         <combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
     	<check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
-	    <check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
+	<check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
+	<check key="picnic_site" text="area picnic" values="yes,no" delete_if_empty="true" />
         <multiselect key="power_supply" delimiter=";" text="tipo prese (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;unknown" />
 
 	    <check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
