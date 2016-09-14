@@ -44,6 +44,7 @@
     <link href="http://www.areeattrezzate.eu/libro/differenza-tra-camper-service-parcheggio-punto-sosta-e-area-attrezzata"/>
     <key key="tourism" value="caravan_site"/>
 	<combo key="capacity" text="numero stalli" values="5,10,15"/>
+	<combo key="opening_hours" text="operativo" values="Jan-Dec,unknown"/>
     <combo key="maxstay" text="max stay" values="8 h,12 h,24 h,48 h,72 h"/>
 	<check key="water_point" text="carico acqua" values="yes,no" delete_if_empty="true" />
 	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
