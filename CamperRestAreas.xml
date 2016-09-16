@@ -52,9 +52,8 @@
     	<check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
 	<check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
 	<check key="picnic_site" text="area picnic" values="yes,no" delete_if_empty="true" />
-        <multiselect key="power_supply" delimiter=";" text="tipo prese (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;yes" />
-
-	    <check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
+        <multiselect key="power_supply" delimiter=";" text="elettricità (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;yes" />
+        <check key="fee" text="a pagamento" values="yes,no," delete_if_empty="true" />
 		
   </item>
 
