@@ -4,96 +4,87 @@
 <item name="P - Parcheggio" icon="area_type.png" type="node,closedway" > 
     <label text="P - Parcheggio" />
     <key key="amenity" value="parking"/>
+    <check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
     <combo key="maxstay" text="max stay" values="8 h,12 h,24 h,48 h,72 h"/>
-	<check key="lit" text="illuminato" values="yes,no" delete_if_empty="true" />
-	<check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
-
+    <check key="lit" text="illuminato" values="yes,no" delete_if_empty="true" />
 </item>
 
 
-  <item name="AS - Area di Sosta" icon="area_type.png" type="node,closedway">
-      <label text="AS - Area di Sosta" />
+<item name="AS - Area di Sosta" icon="area_type.png" type="node,closedway">
+    <label text="AS - Area di Sosta" />
     <link href="http://www.areeattrezzate.eu/libro/differenza-tra-camper-service-parcheggio-punto-sosta-e-area-attrezzata"/>
     <key key="highway" value="rest_area"/>
-	<combo key="capacity" text="numero stalli" values="5,10,15"/>
+    <check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
+    <combo key="capacity" text="numero stalli" values="5,10,15"/>
     <combo key="maxstay" text="max stay" values="8 h,12 h,24 h,48 h,72 h"/>
     <check key="drinking_water" text="acqua potabile" default="on" delete_if_empty="true" />
-	<check key="toilets" text="WC" default="off" delete_if_empty="true" />
-	<check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
-
-	<check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
-
-  </item>
+    <check key="toilets" text="WC" default="off" delete_if_empty="true" />
+    <check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
+</item>
 
 
   
-  <item name="CS - Camper Service" icon="area_type.png" type="node,closedway">
-      <label text="CS - Camper Service" />
+<item name="CS - Camper Service" icon="area_type.png" type="node,closedway">
+    <label text="CS - Camper Service" />
     <link href="http://www.areeattrezzate.eu/libro/differenza-tra-camper-service-parcheggio-punto-sosta-e-area-attrezzata"/>
-    <!--key key="tourism" value="caravan_site"/-->
-	<key key="amenity" value="water_point" />
-	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
-	<combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
-	<check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
-	<check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
-  </item>
+    <key key="amenity" value="water_point" />
+    <check key="fee" text="a pagamento" values="yes,no" delete_if_empty="true" />
+    <combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
+    <combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
+    <check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
+</item>
   
   
-  <item name="AA - Area Attrezzata" icon="area_type.png" type="node,closedway">
-      <label text="AA - Area Attrezzata" />
+<item name="AA - Area Attrezzata" icon="area_type.png" type="node,closedway">
+    <label text="AA - Area Attrezzata" />
     <link href="http://www.areeattrezzate.eu/libro/differenza-tra-camper-service-parcheggio-punto-sosta-e-area-attrezzata"/>
     <key key="tourism" value="caravan_site"/>
-	<combo key="capacity" text="numero stalli" values="5,10,15"/>
-	<combo key="opening_hours" text="operativo" values="Jan-Dec,unknown"/>
+    <check key="fee" text="a pagamento" values="yes,no," delete_if_empty="true" />
+    <combo key="capacity" text="numero stalli" values="5,10,15"/>
+    <combo key="opening_hours" text="operativo" values="Jan-Dec,unknown"/>
     <combo key="maxstay" text="max stay" values="8 h,12 h,24 h,48 h,72 h"/>
-	
-	
-	<!--check key="water_point" text="carico acqua" values="yes,no" delete_if_empty="true" />
-	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/-->
-        <multiselect key="water_point" delimiter=";" text="carico acqua (presa in pollici)" values="3/4;1;yes;no" />        
-        
-        <combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
-    	<check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
-	<check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
-	<check key="picnic_site" text="area picnic" values="yes,no" delete_if_empty="true" />
-        <multiselect key="power_supply" delimiter=";" text="elettricità (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;yes;no" />
-        <check key="fee" text="a pagamento" values="yes,no," delete_if_empty="true" />
-		
-  </item>
+    <multiselect key="water_point" delimiter=";" text="carico acqua (presa in pollici)" values="3/4;1;yes;no" />        
+    <check key="water_point:fee" text="carico a pagamento" values="yes,no," delete_if_empty="true" />        
+    <combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
+    <check key="sanitary_dump_station:fee" text="scarico a pagamento" values="yes,no," delete_if_empty="true" />
+    <check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
+    <check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
+    <check key="picnic_site" text="area picnic" values="yes,no" delete_if_empty="true" />
+    <multiselect key="power_supply" delimiter=";" text="elettricità (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;yes;no" />
+    <check key="power_supply:fee" text="elettricità a pagamento" values="yes,no," delete_if_empty="true" />
+</item>
 
   
-  <item name="Carico acqua potabile" type="node">
+<item name="Carico acqua potabile" type="node">
    <label text="acqua potabile" />
    <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dwater_point"/>
-  <key key="amenity" value="water_point"/>
-  <combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
-  </item>
+   <key key="amenity" value="water_point"/>
+   <combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
+</item>
 
-  <item name="Aree Picnic" type="node,closedway">
+<item name="Aree Picnic" type="node,closedway">
    <label text="Area picnic" />
    <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism%3Dpicnic_site"/>
-  <key key="tourism" value="picnic_site"/>
-  <check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
-  <check key="drinking_water" text="acqua potabile" default="on" delete_if_empty="true" />
-  <check key="openfire" text="BBQ" default="off" delete_if_empty="true" />
-  </item>
+   <key key="tourism" value="picnic_site"/>
+   <check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
+   <check key="drinking_water" text="acqua potabile" default="on" delete_if_empty="true" />
+   <check key="openfire" text="BBQ" default="off" delete_if_empty="true" />
+</item>
 
-  <item name="Prese elettriche" type="node">
-  <label text="presa elettrica" />
+<item name="Prese elettriche" type="node">
+   <label text="presa elettrica" />
    <link href="http://wiki.openstreetmap.org/wiki/Key:power_supply"/>
-  <multiselect key="power_supply" delimiter=";" text="tipo prese (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;unknown" />
-  </item>
+   <multiselect key="power_supply" delimiter=";" text="tipo prese (blu/schuko/italiana)" values="cee_17_blue;cee_7_4;cei_23_16;unknown" />
+</item>
 
   
-  <item name="Charging Station" type="node">
+<item name="Charging Station" type="node">
   <label text="Stazioni di ricarica" />
   <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcharging_station"/>
   <key key="amenity" value="charging_station" />
   <combo key="socket:cee_blue" text="numero prese CEE blu" values="0,1,2,3,4,5,6,7,8"/>  
   <combo key="socket:schuko" text="numero prese Schuko" values="0,1,2,3,4,5,6,7,8"/>  
+</item>
 
-  </item>
-
-  
-  </group>
+</group>
 </presets>
