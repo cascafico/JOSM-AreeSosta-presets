@@ -46,8 +46,12 @@
 	<combo key="capacity" text="numero stalli" values="5,10,15"/>
 	<combo key="opening_hours" text="operativo" values="Jan-Dec,unknown"/>
     <combo key="maxstay" text="max stay" values="8 h,12 h,24 h,48 h,72 h"/>
-	<check key="water_point" text="carico acqua" values="yes,no" delete_if_empty="true" />
-	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/>
+	
+	
+	<!--check key="water_point" text="carico acqua" values="yes,no" delete_if_empty="true" />
+	<combo key="water_point:description" text="descrizione presa" values="presa 3/4 di pollice,presa da 1 pollice,diametro sconosciuto"/-->
+        <multiselect key="water_point" delimiter=";" text="carico acqua (presa in pollici)" values="3/4;1;yes;no" />        
+        
         <combo key="sanitary_dump_station" text="scarico acque grigie" values="yes,no,customers"/>
     	<check key="toilets" text="WC" values="yes,no" delete_if_empty="true" />
 	<check key="playground" text="parcogiochi" values="yes,no" delete_if_empty="true" />
